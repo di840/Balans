@@ -929,3 +929,29 @@ input:checked + .toggle-slider:before {
 #calcInput.xsmall-font {
   font-size: 20px;
 }
+
+@media (min-width: 768px) {
+  #app { max-width: 600px; }
+  .accounts-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .calc-btn { min-height: 64px; font-size: 24px; }
+}
+
+/* Десктоп */
+@media (min-width: 1024px) {
+  #app { max-width: 720px; }
+  .balance-amount { font-size: 42px; }
+  .tx-item { padding: 16px; }
+}
+
+/* Маленькие экраны (iPhone SE) */
+@media (max-width: 360px) {
+  #calcInput { font-size: 34px; }
+  .calc-btn { min-height: 46px; font-size: 18px; }
+  .balance-amount { font-size: 28px; }
+}
+
+/* Ландшафт */
+@media (orientation: landscape) and (max-height: 500px) {
+  .screen { padding-bottom: 70px; }
+  .calc-btn { min-height: 42px; }
+}
