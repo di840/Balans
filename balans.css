@@ -59,6 +59,7 @@ body {
   padding: 16px;
   margin-top: -50px;
   padding-bottom: 80px;
+  display: none;
 }
 
 .screen.active {
